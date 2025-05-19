@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: #56E0EB;
+    font-family: krona, sans-serif;
+    height: 100vh;
+}
+
+.title__destaque {
+    color: #6B90E8;
+}
+
+.texto__destaque {
+    color: #6B90E8;
+}
+
+.android {
+    color: #a4c639;
+}
+
+.container {
+    margin: 7%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.container__content {
+    width: 100%; 
+    max-width: 350px; 
+    margin-bottom: 20px;
+}
+
+.container__content__title {
+    color: #6BE0E8;
+    font-size: 1.8rem; 
+    margin-bottom: 30px;
+    margin-top: 25px;
+
+}
+
+.container__content__paragraph1 {
+    font-size: 1rem;
+    margin-bottom: 18px;
+}
+
+.container__buttons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.buttons {
+    background-color: #a3d6ff;
+    border: 4px solid #6B91E8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 10px; 
+}
+
+.image__perfil {
+    width: 200px;
+    height: auto; 
+    border-radius: 7%;
+    margin-bottom: 18px;
+    border: 3px solid #6B91E8;
+}
+
+main a {
+    color: #6B91E8;
+    text-decoration: none;
+    margin: 18px;
+    font-size: 1rem;
+}
+
+main a:hover {
+    color: #6BE8C6;
+}
+
+main span {
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    font-family:krona, sans-serif;
+}
+
+footer {
+    background-color: #98DAFF;
+    width: 100%;
+    height: 80px; 
+    position: fixed;
+    line-height: 80px;
+    bottom: 0;
+    text-align: center;
+}
+
+footer p {
+    color: rgb(0, 0, 0);
+    font-family: krona, sans-serif;
+    font-size: 14px;
+}
+
+@media (max-width: 450px) {
+    .container {
+        margin: 3%; 
+    }
+
+    .container__content__title {
+        font-size: 1.5rem; 
+    }
+
+    .image__perfil {
+        width: 180px; 
+    }
+
+    footer {
+        height: 70px; 
+        line-height: 70px;
+    }
+
+    footer p {
+        font-size: 12px; 
+    }
+}
