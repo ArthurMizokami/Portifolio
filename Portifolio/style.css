@@ -84,6 +84,11 @@ body {
     height: 45px;
     display: flex;
     justify-content: flex-start;
+    
+}
+
+.buttons__linkedin:hover {
+    background-color: #272829;
 }
 
 .image__linkedin {
@@ -104,6 +109,10 @@ body {
     height: 45px;
     display: flex;
     justify-content: flex-start;
+}
+
+.buttons__github:hover {
+    background-color: #272829;
 }
 
 .image__github {
