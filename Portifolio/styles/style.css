@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --color-primary: #46B7E3;
+    --color-secondary: #000000;
+    --color-accent: #ffffff;
+    --color-android: #c0fa00;
+    --color-link: #6B91E8;
+    --color-link-hover: #6BE8C6;
+    --color-button-hover: #272829;
+    --color-footer: #98DAFF;
+    --font-primary: 'Krona One', sans-serif;
+    --font-secondary: 'Montserrat', sans-serif;
+}
+
 .header {
-    background-color: #000000;
+    background-color: var(--color-secondary);
     width: 100%;
     height: 40px; 
     position: fixed;
@@ -16,50 +27,47 @@
     text-align: start;
     padding: 0% 0% 0% 0%;
     display: flex;
-    
 }
 
 .header__menu {
-    color: #46B7E3;
+    color: var(--color-primary);
     font-size: 15px;
     font-weight: bold;
-    font-family: Montserrat, sans-serif;
+    font-family: var(--font-secondary);
     display: flex;
-    padding: 0px 0px; 
-    gap: 0px;  
-    }
+}
 
 .header__menu__link {
     text-decoration: none;
-    color: #65b6df;
+    color: var(--color-primary);
     padding: 0px 9px;
-    border: #000000 2px solid;
+    border: var(--color-secondary) 2px solid;
     border-radius: 1px;
-    border-right: 2px solid #000000;
+    border-right: 2px solid var(--color-secondary);
 }
 
 .header__menu__link:hover {
-    background-color: #46B7E3;
-    color: #000000;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
     transition: 0.2s;
 }
 
 body {
-    background-color: black;
-    color: #ffffff;;
-    font-family: krona, sans-serif;
+    background-color: var(--color-secondary);
+    color: var(--color-accent);
+    font-family: var(--font-primary);
 }
 
 .title__destaque {
-    color: #46B7E3;
+    color: var(--color-primary);
 }
 
 .texto__destaque {
-    color: #46B7E3;
+    color: var(--color-primary);
 }
 
 .android {
-    color: #c0fa00;
+    color: var(--color-android);
 }
 
 .container {
@@ -77,13 +85,12 @@ body {
 }
 
 .container__content__title {
-    color: #ffffff;;
+    color: var(--color-accent);
     font-size: 1.8rem; 
     margin-bottom: 30px;
     margin-top: 25px;
     text-align: start;
     line-height: 1.2;
-
 }
 
 .container__content__paragraph1 {
@@ -91,13 +98,12 @@ body {
     margin-bottom: 18px;
     text-align: start;
     line-height: 1.4;
-
 }
 
 .container__title2 {
-    font-family: Montserrat, sans-serif;
+    font-family: var(--font-secondary);
     font-size: 1.1rem;
-    color: #ffffff;
+    color: var(--color-accent);
     margin-bottom: 11px;
 }
 
@@ -106,28 +112,26 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .buttons__linkedin {
-    background-color: #000000;
-    border: 2px solid #46B7E3;
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-primary);
     padding: 3px 15px;
     border-radius: 4px;
-    font-family: Montserrat, sans-serif;
+    font-family: var(--font-secondary);
     font-size: 1rem;
     font-weight: bold;
     margin: 5px; 
     margin-bottom: 11px;
-    width: 140px;
+    width: 160px;
     height: 45px;
     display: flex;
     justify-content: flex-start;
-    
 }
 
 .buttons__linkedin:hover {
-    background-color: #272829;
+    background-color: var(--color-button-hover);
 }
 
 .image__linkedin {
@@ -137,22 +141,22 @@ body {
 }
 
 .buttons__github {
-    background-color: #000000;
-    border: 2px solid #46B7E3;
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-primary);
     padding: 3px 15px;
     border-radius: 4px;
-    font-family: Montserrat, sans-serif;
+    font-family: var(--font-secondary);
     font-size: 1rem;
     font-weight: bold;
     margin: 5px; 
-    width: 140px;
+    width: 160px;
     height: 45px;
     display: flex;
     justify-content: flex-start;
 }
 
 .buttons__github:hover {
-    background-color: #272829;
+    background-color: var(--color-button-hover);
 }
 
 .image__github {
@@ -166,7 +170,19 @@ body {
     height: auto; 
     border-radius: 4%;
     margin-bottom: 18px;
-    border: 4px double #46B7E3;
+    border: 4px double var(--color-primary);
+}
+
+.image__perfil__about {
+    width: 210px;
+    height: auto; 
+    border-radius: 4%;
+    margin-bottom: 18px;
+    border: 4px double var(--color-primary);
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    margin-top: 10%;
 }
 
 main a {
@@ -181,25 +197,28 @@ main a:hover {
 }
 
 main span {
-    color: #ffffff;
+    color: var(--color-accent);
     padding: 10px;
     border-radius: 5px;
-    font-family:krona, sans-serif;
+    font-family:var(--font-primary);
 }
 
 footer {
-    background-color: #98DAFF;
+    background-color: var(--color-footer);
     width: 100%;
-    height: 80px; 
+    height: 6%; 
     position: fixed;
-    line-height: 80px;
+    line-height: 3%;
     bottom: 0;
     text-align: center;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
 }
 
 footer p {
-    color: #000000;
-    font-family: Montserrat, sans-serif;
+    color: var(--color-secondary);
+    font-family: var(--font-secondary);
     font-size: 16px;
 }
 
@@ -229,25 +248,29 @@ footer p {
 .container__content__about{
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
     align-items: left;
+    max-width: 350px;
     text-align: start;
-    font-family: Montserrat, sans-serif;
+    font-family: var(--font-secondary);
     font-size: 1.1rem;
-    color: #ffffff;
-    margin: 15%;
+    color: var(--color-accent);
+    margin: auto;
+    width: 100%; 
+    margin-top: 12%;
 }
 
 .container__content__about__title{
-    font-family: Montserrat, sans-serif;
+    font-family: var(--font-secondary);
     font-size: 1.5rem;
-    color: #ffffff;
+    color: var(--color-accent);
     margin-bottom: 10%;
+    margin-top: 10%;
 }
 
 .container__content__paragraph__about {
     font-size: 1rem;
-    font-family: Montserrat, sans-serif;
+    font-family: var(--font-secondary);
     margin-bottom: 18px;
     text-align: start;
     line-height: 1.4;
@@ -255,9 +278,9 @@ footer p {
 }
 
 .container__content__title__curriculo {
-    color: #ffffff;;
+    color: var(--color-accent);
     font-size: 1.8rem; 
-    font-family: Montserrat, sans-serif;
+    font-family: var(--font-secondary);
     margin-left: 10%;
     margin-top: 15%;
     text-align: start;
@@ -266,28 +289,29 @@ footer p {
 }
 
 .container__content__curriculo {
-    width: 100%; 
-    max-width: 85%; 
+    max-width: 420px; 
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: left;
     text-align: start;
-    margin-top: 0%;
+    margin: auto;
+    width: 100%; 
+    margin-bottom: 6%;
 }
 
 .container__content__paragraph__curriculo {
     font-size: 1rem;
-    font-family: Montserrat, sans-serif;
+    font-family: var(--font-secondary);
     text-align: start;
     line-height: 1.4;
     margin-left: 10%;
 }
 
 .container__content__title2__curriculo {
-    font-family: Montserrat, sans-serif;
+    font-family: var(--font-secondary);
     font-size: 1.8rem;
-    color: #ffffff;
+    color: var(--color-accent);
     margin-left: 10%;
     margin-top: 10%;
     text-align: start;
@@ -297,16 +321,16 @@ footer p {
 
 .container__content__paragraph2__curriculo{
     font-size: 1rem;
-    font-family: Montserrat, sans-serif;
+    font-family: var(--font-secondary);
     text-align: start;
     line-height: 1.4;
     margin-left: 10%;
 }
 
 .container__content__title3__curriculo {
-    font-family: Montserrat, sans-serif;
+    font-family: var(--font-secondary);
     font-size: 1.8rem;
-    color: #ffffff;
+    color: var(--color-accent);
     margin-left: 10%;
     margin-top: 10%;
     text-align: start;
@@ -316,7 +340,7 @@ footer p {
 
 .container__content__paragraph3__curriculo {
     font-size: 1rem;
-    font-family: Montserrat, sans-serif;
+    font-family: var(--font-secondary);
     margin-bottom: 3%;
     text-align: start;
     line-height: 1.4;
@@ -326,10 +350,10 @@ footer p {
 
 .link__credencial {
   font-size: 0.9em;
-  color: #46B7E3;
+  color: var(--color-primary);
 }
 
 .link__credencial:hover {
     font-size: 1em;
-  color: #ffffff;
+  color: var(--color-accent);
 }
