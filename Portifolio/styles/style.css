@@ -12,7 +12,6 @@
     --color-link: #6B91E8;
     --color-link-hover: #6BE8C6;
     --color-button-hover: #272829;
-    --color-footer: #98DAFF;
     --font-primary: 'Krona One', sans-serif;
     --font-secondary: 'Montserrat', sans-serif;
 }
@@ -20,18 +19,18 @@
 .header {
     background-color: var(--color-secondary);
     width: 100%;
-    height: 40px; 
+    height: 2.5rem; 
     position: fixed;
-    line-height: 40px;
+    line-height: 2.5rem;
     top: 0;
     text-align: start;
-    padding: 0% 0% 0% 0%;
+    padding: 0;
     display: flex;
 }
 
 .header__menu {
     color: var(--color-primary);
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: bold;
     font-family: var(--font-secondary);
     display: flex;
@@ -40,10 +39,10 @@
 .header__menu__link {
     text-decoration: none;
     color: var(--color-primary);
-    padding: 0px 9px;
-    border: var(--color-secondary) 2px solid;
-    border-radius: 1px;
-    border-right: 2px solid var(--color-secondary);
+    padding: 0 0.5625rem;
+    border: var(--color-secondary) 0.125rem solid;
+    border-radius: 0.0625rem;
+    border-right: 0.125rem solid var(--color-secondary);
 }
 
 .header__menu__link:hover {
@@ -80,22 +79,22 @@ body {
 
 .container__content {
     width: 100%; 
-    max-width: 350px; 
-    margin-bottom: 20px;
+    max-width: 21.875rem; 
+    margin-bottom: 1.25rem;
 }
 
 .container__content__title {
     color: var(--color-accent);
     font-size: 1.8rem; 
-    margin-bottom: 30px;
-    margin-top: 25px;
+    margin-bottom: 1.875rem;
+    margin-top: 1.5625rem;
     text-align: start;
     line-height: 1.2;
 }
 
 .container__content__paragraph1 {
     font-size: 1rem;
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
     text-align: start;
     line-height: 1.4;
 }
@@ -104,7 +103,7 @@ body {
     font-family: var(--font-secondary);
     font-size: 1.1rem;
     color: var(--color-accent);
-    margin-bottom: 11px;
+    margin-bottom: 0.6875rem;
 }
 
 .container__buttons {
@@ -116,16 +115,16 @@ body {
 
 .buttons__linkedin {
     background-color: var(--color-secondary);
-    border: 2px solid var(--color-primary);
-    padding: 3px 15px;
-    border-radius: 4px;
+    border: 0.125rem solid var(--color-primary);
+    padding: 0.1875rem 0.9375rem;
+    border-radius: 0.25rem;
     font-family: var(--font-secondary);
     font-size: 1rem;
     font-weight: bold;
-    margin: 5px; 
-    margin-bottom: 11px;
-    width: 160px;
-    height: 45px;
+    margin: 0.3125rem; 
+    margin-bottom: 0.6875rem;
+    width: 10rem;
+    height: 2.8125rem;
     display: flex;
     justify-content: flex-start;
 }
@@ -136,21 +135,21 @@ body {
 
 .image__linkedin {
     width: auto;
-    height: 23px; 
-    margin-top: 4px;
+    height: 1.4375rem; 
+    margin-top: 0.25rem;
 }
 
 .buttons__github {
     background-color: var(--color-secondary);
-    border: 2px solid var(--color-primary);
-    padding: 3px 15px;
-    border-radius: 4px;
+    border: 0.125rem solid var(--color-primary);
+    padding: 0.1875rem 0.9375rem;
+    border-radius: 0.25rem;
     font-family: var(--font-secondary);
     font-size: 1rem;
     font-weight: bold;
-    margin: 5px; 
-    width: 160px;
-    height: 45px;
+    margin: 0.3125rem; 
+    width: 10rem;
+    height: 2.8125rem;
     display: flex;
     justify-content: flex-start;
 }
@@ -161,24 +160,24 @@ body {
 
 .image__github {
     width: auto;
-    height: 23px; 
-    margin-top: 4px;
+    height: 1.4375rem; 
+    margin-top: 0.25rem;
 }
 
 .image__perfil {
-    width: 210px;
+    width: 15rem;
     height: auto; 
     border-radius: 4%;
-    margin-bottom: 18px;
-    border: 4px double var(--color-primary);
+    margin-bottom: 1.125rem;
+    border: 0.25rem double var(--color-primary);
 }
 
 .image__perfil__about {
-    width: 210px;
+    width: 13.125rem;
     height: auto; 
     border-radius: 4%;
-    margin-bottom: 18px;
-    border: 4px double var(--color-primary);
+    margin-bottom: 1.125rem;
+    border: 0.25rem double var(--color-primary);
     display: flex;
     justify-content: center;    
     align-items: center;
@@ -188,7 +187,7 @@ body {
 main a {
     color: #6B91E8;
     text-decoration: none;
-    margin: 18px;
+    margin: 1.125rem;
     font-size: 1rem;
 }
 
@@ -198,31 +197,31 @@ main a:hover {
 
 main span {
     color: var(--color-accent);
-    padding: 10px;
-    border-radius: 5px;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
     font-family:var(--font-primary);
 }
 
 footer {
-    background-color: var(--color-footer);
-    width: 100%;
-    height: 6%; 
+    background-color: #98DAFF;
+    width: 100%; 
     position: fixed;
     line-height: 3%;
     bottom: 0;
+    left: 0;
     text-align: center;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     align-items: center;
 }
 
 footer p {
     color: var(--color-secondary);
     font-family: var(--font-secondary);
-    font-size: 16px;
+    font-size: 1rem;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 28.125rem) {
     .container {
         margin: 3%; 
     }
@@ -232,16 +231,16 @@ footer p {
     }
 
     .image__perfil {
-        width: 180px; 
+        width: 11.25rem; 
     }
 
     footer {
-        height: 70px; 
-        line-height: 70px;
+        height: 4.375rem; 
+        line-height: 4.375rem;
     }
 
     footer p {
-        font-size: 12px; 
+        font-size: 0.75rem; 
     }
 }
 
@@ -250,14 +249,14 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    max-width: 350px;
+    max-width: 21.875rem;
     text-align: start;
     font-family: var(--font-secondary);
     font-size: 1.1rem;
     color: var(--color-accent);
     margin: auto;
     width: 100%; 
-    margin-top: 12%;
+    margin-top: 2.2rem;
 }
 
 .container__content__about__title{
@@ -271,7 +270,7 @@ footer p {
 .container__content__paragraph__about {
     font-size: 1rem;
     font-family: var(--font-secondary);
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
     text-align: start;
     line-height: 1.4;
     margin-top: 10%;
@@ -289,7 +288,7 @@ footer p {
 }
 
 .container__content__curriculo {
-    max-width: 420px; 
+    max-width: 26.25rem; 
     display: flex;
     flex-direction: column;
     justify-content: left;
