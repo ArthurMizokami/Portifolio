@@ -85,9 +85,9 @@ body {
 
 .container__content__title {
     color: var(--color-accent);
-    font-size: 1.8rem; 
+    font-size: 1.9rem; 
     margin-bottom: 1.875rem;
-    margin-top: 1.5625rem;
+    margin-top: 1.85rem;
     text-align: start;
     line-height: 1.2;
 }
