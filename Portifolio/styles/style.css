@@ -14,7 +14,7 @@
     --color-button-hover: #272829;
     --font-primary: 'Krona One', sans-serif;
     --font-secondary: 'Montserrat', sans-serif;
-}
+} 
 
 .header {
     background-color: var(--color-secondary);
